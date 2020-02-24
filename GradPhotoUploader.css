@@ -1,0 +1,735 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
+
+/* -------------------------- Page ------------------- */ 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  background-color: #262626; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+h1 {
+	text-align: center;
+	font-size: 50px;
+	margin-top: 25px;
+	color: #F9F9F9;
+}
+
+/* ------------------------ Thumbnail holder and images -------------- */
+
+.container {
+  max-width: 75%;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  padding: 15px;
+}
+
+.formContainer {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.album {
+	width: 500px;
+	text-align: center;
+}
+
+.thumbnailBox {
+	width: 50%;
+	min-height: 200px;
+	height: auto;
+	min-height: 200px;
+	margin-bottom: 50px;
+	padding-bottom: 30px;
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.images {
+	min-height: 200px; 
+	height: auto; 
+	text-align: center;
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 20px; 
+	padding: 10px;
+	border-radius: 8px; 
+	border: 3px solid #8a00e6;
+	padding-bottom: 30px; 	
+}
+
+
+.imgThumb {
+	width: 150px;
+	height: auto; 
+	border-radius: 3px; 
+	border: 4px solid #8a00e6; 
+	margin: 15px;
+	margin-top: 25px;  	
+	cursor: pointer; 
+	float: left;
+}
+
+.output {
+	color: white;
+	font-size: 15px;
+	z-index: 5;
+}
+
+/* ------------------- thumbnail checkbox ---------------------- */ 
+
+.checkThumb {
+	margin-top: -15px; 
+	float: right; 
+	margin-right: -15px; 
+	display: none; 
+	z-index: 22; 
+}
+
+.checkboxThumb {
+	border: 4px solid #8a00e6;
+	width: 20px; 
+	height: 20px;
+	float: right;
+	position: absolute;
+	margin-top: 30px; 
+	margin-left: 140px;
+	z-index: 22;  	
+}
+
+.message {
+	font-size: 20px;
+	color: #FFF; 
+	margin: 15px; 
+}
+
+/* ------------------ image download ----------------- */
+
+.download {
+	width: 0px;
+	height: 0px; 
+}
+
+.downloadIcon {
+	width: 30px; 
+	height: 30px; 
+	position: absolute;
+	margin-top: 30px; 
+	margin-left: -160px;
+	z-index: 24; 
+}
+
+.editBoxes {
+	height: 30px; 
+	display: inline-block; 
+	margin: 5px; 
+	border: 2px solid #8a00e6;
+    color: white; 
+    background: rgba( 255, 255, 255, 0.0);	
+}
+
+/* ----------------- Interior Lightbox Buttons ---------- */ 
+
+#submission {
+	margin-top: 20px; 
+}
+
+
+.link {
+	z-index: 10;
+	display: inline-block; 
+	width: 150px; 
+	height: 150px;
+	margin: 15px; 	
+}
+
+.uploader {
+	text-align: center;
+	position: relative;
+}
+
+.arrows {
+	margin-left: auto;
+	margin-right: auto;
+	height: 40px;
+	width: 40px;
+}
+
+#thumbnail{
+	padding: 5px;
+}
+
+/* ----------------- Upload Form ------------ */ 
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea,
+#contact button {
+  font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+}
+
+#contact {
+  padding: 25px;
+  border: 3px solid #8a00e6;
+  border-radius: 8px;
+}
+
+#contact h3 {
+  display: block;
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+#contact h4 {
+  margin: 5px 0 15px;
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+fieldset {
+  border: none; 
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+  background: #262626;
+}
+
+input[type="text"],
+input[type="file"],
+textarea {
+	background: #262626;
+	color: #FFF;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea {
+  width: 100%;
+  border: 2px solid #8a00e6;
+  border-radius: 8px;
+  background: #262626;
+  margin: 0 0 5px;
+  padding: 10px;
+  color: #FFF;
+}
+
+#contact input[type="text"]:hover,
+#contact input[type="email"]:hover,
+#contact input[type="tel"]:hover,
+#contact input[type="url"]:hover,
+#contact textarea:hover { 
+	border-color: #5c0099; 
+}
+
+#contact textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none;
+}
+
+#contact button[type="submit"] {
+  cursor: pointer;
+  width: 100%;
+  border: 2px solid #8a00e6;
+  border-radius: 8px;
+  background: #8A00E6;
+  color: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+#contact button[type="submit"]:hover {
+  background-color: #5c0099;
+  border-color: #5c0099; 
+  -webkit-transition: background 0.8s ease-in-out;
+  -moz-transition: background 0.8s ease-in-out;
+  transition: background-color 0.8s ease-in-out; 
+  /*-webkit-transition: border 0.8s ease-in-out;
+  -moz-transition: border 0.8s ease-in-out;
+  transition: border-color 0.8s ease-in-out; */
+}
+
+#contact button[type="submit"]:active {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  outline: 0;
+  border: 1px solid #aaa;
+}
+
+/* ---------- General Buttons ------------*/
+.albumButton {
+	cursor: pointer;
+	text-align: center;
+	border: none;
+	background-color: #8a00e6;
+	color: #FFF;
+	margin: 0 0 5px;
+	padding: 10px;
+	font-size: 18px;
+	border-radius: 8px; 
+}
+
+.albumButton:hover {
+  background: #5c0099;
+  -webkit-transition: background 0.8s ease-in-out;
+  -moz-transition: background 0.8s ease-in-out;
+  transition: background-color 0.8s ease-in-out;
+}
+
+.error {
+	color: red;
+}
+
+.viewAlbumDiv{
+	text-align: center;
+	padding: 0px;
+	margin: 0px;
+}
+
+.albumButton:active{
+	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.approvalMessage {
+	color: white;
+	font-size: 20px;
+}
+
+/*---------Search bar and button------------*/
+
+.searchBarDiv {
+	width: 200px;
+	display: inline-block;
+	float: right;
+	margin: 10px;
+}
+
+.publicSearchBarDiv {
+	width: 200px;
+	display: inline-block;
+	float: right;
+	margin: -5px;
+}
+
+#searchBar { 
+	position: relative;
+	top: 5px; 
+    border-top: 2px solid rgba( 255, 255, 255, 0.0);
+    border-left: 2px solid rgba( 255, 255, 255, 0.0);
+    border-right: 2px solid rgba( 255, 255, 255, 0.0);
+    resize: vertical;
+	border-bottom: 2px solid #8a00e6;
+    color: white; 
+    font-family: monospace; 
+    background: rgba( 255, 255, 255, 0.0);	
+	z-index: 10;
+	float: left;
+}
+
+.searchButton {
+	display: inline-block;
+}
+
+#searchButton {
+	position: relative;
+	margin-top: 5px;
+	margin-right: 5px; 	
+	float: right; 
+	background-image: url("search.png");
+	background-color: #8a00e6;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 25px;
+	width: 25px; 
+	border-radius: 3px;
+	border-color: #8a00e6; 
+	cursor: pointer; 
+	z-index: 10;
+}
+
+#searchBarPublic { 
+	position: relative;
+	top: 15px; 
+	margin-left: 67%;
+	border-bottom: 2px solid #8a00e6;
+    border-top: 2px solid rgba( 255, 255, 255, 0.0);
+    border-left: 2px solid rgba( 255, 255, 255, 0.0);
+    border-right: 2px solid rgba( 255, 255, 255, 0.0);
+    resize: vertical;
+    color: white; 
+    font-family: monospace; 
+    background: rgba( 255, 255, 255, 0.0);	
+	z-index: 10;
+}
+
+.searchButton {
+	display: inline-block;
+}
+
+#searchButtonPublic {
+	position: relative;
+	top: 10px; 
+	margin-top: 5px;
+	margin-right: 5px; 	
+	float: right; 
+	background-image: url("search.png");
+	background-color: #8a00e6;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 25px;
+	width: 25px; 
+	border-radius: 3px;
+	border-color: #8a00e6; 
+	cursor: pointer; 
+	z-index: 10;
+}
+
+/*------------view settings buttons------------*/
+
+.viewSettings {
+
+   background: #242729;
+   border-radius: 8px; 
+   border: 3px solid #8a00e6;
+   font-family: Arial;
+   z-index: 11; 
+   margin-bottom: 0rem;
+   height: 27px; 
+	width: 225px;    
+   
+}
+.viewSettings button {
+  display: inline-block;
+  color: #fff;
+  cursor: pointer; 
+  width: 70px;
+  height: 21px; 
+  border: none;
+  z-index: 20;
+  background-color: rgba( 0, 0, 0, 0.0);   
+  border-radius: 4px; 
+  padding: 3px;   
+  
+}
+
+.viewSettings button:hover {
+  background-color: #5c0099;
+}
+
+/*--------------sort buttons-----------*/
+
+.sort {
+   /*float: left; */
+   background: #242729;
+   border-radius: 8px; 
+   border: 3px solid #8a00e6;
+   font-family: Arial;
+   z-index: 11; 
+   margin-bottom: 0rem;
+   height: 27px;
+   width: 225px; 
+}
+
+.sort button {
+  display: inline-block; 
+  color: #fff;
+  cursor: pointer; 
+  width: 70px;
+  height: 21px; 
+  border: none;
+  z-index: 20;
+  background-color: rgba( 0, 0, 0, 0.0); 
+  border-radius: 4px; 
+  padding: 3px;   
+  
+}
+
+.sort button:hover {
+  background-color: #5c0099;
+}
+
+
+
+/*---------------file upload-------------*/
+
+input[type="file"] {
+	width: 60%;
+}
+.file {
+	color: #FFF; 
+    border: 2px solid #8a00e6;
+	border-radius: 8px; 
+	background: #262626;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+	width: 100%;
+}
+
+.file:hover{
+	border-color: #5c0099;
+}
+
+/*----------------------- checkbox -----------------*/
+
+/* Customize the label (the container) */
+.checkboxContainer {
+  color: #FFF;
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 15px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.checkbox {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #262626; 
+  border: 2px solid #8a00e6;
+  border-radius: 2px; 
+}
+
+/* On mouse-over, add a grey background color */
+.checkboxContainer:hover input ~ .checkmark {
+  border-color: #5c0099;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkboxContainer input:checked ~ .checkmark {
+  background-color: #8a00e6;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  right: 5px;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.checkboxContainer input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkboxContainer .checkmark:after {
+  
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* --------------- radio buttons---------------- */
+
+/* Customize the label (the container) */
+.radioContainer {
+  color: #FFF;
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.radioContainer input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom radio button */
+.radioDot {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #262626; 
+  border: 2px solid #8a00e6;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.radioContainer:hover input ~ .radioDot {
+  border-color: #5c0099;
+}
+
+/* When the radio button is checked, add a blue background */
+.radioContainer input:checked ~ .radioDot {
+  background-color: #8a00e6;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.radioDot:after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radioContainer input:checked ~ .radioDot:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.radioContainer .radioDot:after {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+#radioButton1 {
+	display: inline-block;
+}
+
+#radioButton2 {
+	display: inline-block;
+}
+
+/* -------------------- Lightbox css --------------------- */
+
+#lightBox {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+	background-color: rgba(0,0,0,0.6);
+	z-index: 0; 
+}
+
+#positionBigImage {
+    position: absolute;
+    top: 15px;
+    left: 0px;
+    width: 100%;
+	z-index: 0; 
+	display: none; 
+	
+}
+
+#boundaryBigImage {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+    width: 100%;
+    z-index: 0;
+}
+
+#x {
+	position: absolute;
+	top : 0px;
+	right: 0px;
+	height: 30px;
+	width: 30px;
+	z-index: 27;
+}
+
+#imageInfo {
+	color: white;
+	font-size: 20px;
+	width: 40%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#name {
+	width: 32%;
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+}
+
+#tags {
+	right: 0px;
+	margin: auto;
+	text-align: center;
+	width: 32%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+#description {
+	top: 0px;
+	width: 32%;
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+}
+
+/* ----------- show and don't show -------------- */
+
+.hidden {
+	display: none;
+}
+
+.unhidden {
+	display: block;
+}
