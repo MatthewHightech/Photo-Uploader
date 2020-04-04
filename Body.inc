@@ -55,7 +55,7 @@
 			</fieldset>
 			<fieldset>
 				<div class="submit">
-					<button type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+					<button type="submit" id="contact-submit" data-submit="...Sending" onclick="window.location.href = 'https://photouploader-gallery.herokuapp.com/index.php';">Upload Image</button>
 				</div>
 			</fieldset>
 		</form>
