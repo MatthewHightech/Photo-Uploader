@@ -4,8 +4,8 @@
 	<div class="container">
 		
 		<button class="albumButton" onclick="log('out')" type="button">Logout</button>
-		<button class="albumButton" type="button" onclick="window.location.href = 'http://142.31.53.141/~myrus/GradPhotoUploader/index.php?page=approval';">Awaiting Approval</button> <br>
-		<button class="albumButton" onclick="window.location.href = 'http://142.31.53.141/~myrus/GradPhotoUploader/index.php?page=delete';" type="button" >Delete Selected Images</button>
+		<button class="albumButton" type="button" onclick="window.location.href = 'https://photouploader-gallery.herokuapp.com/index.php?page=approval';">Awaiting Approval</button> <br>
+		<button class="albumButton" onclick="window.location.href = 'https://photouploader-gallery.herokuapp.com/index.php?page=delete';" type="button" >Delete Selected Images</button>
 		<button id="downloadAll" class="albumButton" onclick="download('all')">Download All</button>
 		<button id="editAll" class="albumButton" onclick="edit('all')">Edit All</button>
 
