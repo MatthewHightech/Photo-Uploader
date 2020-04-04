@@ -51,7 +51,7 @@ function log(log) {
 				imagesIn.push(allJSON[i]); 
 		} // for
 		setCookie('visibleImages', JSON.stringify(spliceArray(imagesIn)), 1);
-		window.location.href = 'http://142.31.53.141/~myrus/GradPhotoUploader/index.php?page=login';
+		window.location.href = 'https://photouploader-gallery.herokuapp.com/index.php?page=login';
 	} else if (log == "out") {
 		for (var i = 0; i < allJSON.length; i++) {
 			if (allJSON[i].access == "public") {
@@ -59,7 +59,7 @@ function log(log) {
 			} // if
 		} // for
 		setCookie('publicVisibleImages', JSON.stringify(spliceArray(imagesIn)), 1);
-		window.location.href = 'http://142.31.53.141/~myrus/GradPhotoUploader/index.php?page=logout';
+		window.location.href = 'https://photouploader-gallery.herokuapp.com/index.php?page=logout';
 	} // if/else if
 } // log
 
