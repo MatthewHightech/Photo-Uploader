@@ -61,7 +61,7 @@
 		</form>
 		<fieldset>
 			<div class="viewAlbumDiv">
-				<button class="albumButton" type="button" onclick="window.location.href = 'http://142.31.53.141/~myrus/GradPhotoUploader/index.php';">View Album</button>
+				<button class="albumButton" type="button" onclick="window.location.href = 'https://photouploader-gallery.herokuapp.com/index.php';">View Album</button>
 			</div>
 		</fieldset>
 	</div>
