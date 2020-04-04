@@ -2,7 +2,7 @@
 
 <div class="uploader">
 	<div class="container">
-		<button class="albumButton" type="button" onclick="window.location.href = 'http://142.31.53.141/~myrus/GradPhotoUploader/upload.php';">Upload</button>
+		<button class="albumButton" type="button" onclick="window.location.href = 'https://photouploader-gallery.herokuapp.com/upload.php';">Upload</button>
 		<button class="albumButton" onclick="log('in')" type="button">Login as moderator</button>
 		<button class="albumButton" onclick="log('out')" type="button">Show All</button>
 
